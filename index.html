@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portofolio Web Developer</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+	<style>
+		.custom-box {
+			border: 1px solid #ccc;
+			box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+			border-radius: 10px;
+			margin-bottom: 20px;
+			width: 100%;
+			padding: 20px;
+		}
+
+		.custom-item {
+			border-radius: 8px;
+			padding: 20px;
+			margin-bottom: 15px;
+			margin-left: 5px;
+			text-align: center;
+			transition: transform 0.3s ease-in-out;
+		}
+
+		.custom-item:hover {
+			transform: scale(1.05);
+		}
+
+		.custom-grid {
+			border: 1px solid #e0e0e0;
+			padding: 15px;
+			border-radius: 8px;
+			margin-bottom: 15px;
+			height: 100%;
+		}
+
+		.bg-primary {
+			background-color: #f0e68c !important;
+			color: #333 !important;
+		}
+
+		.bg-secondary {
+			background-color: #add8e6 !important;
+			color: #333 !important;
+		}
+
+		.bg-success {
+			background-color: #90ee90 !important;
+			color: #333 !important;
+		}
+
+		.bg-danger {
+			background-color: #ffcccb !important;
+			color: #333 !important;
+		}
+
+		.bg-warning {
+			background-color: #ffeb3b !important;
+			color: #333 !important;
+		}
+
+		.bg-info {
+			background-color: #87ceeb !important;
+			color: #333 !important;
+		}
+
+		.bg-light {
+			background-color: #fefefe !important;
+			color: #333 !important;
+		}
+
+		.bg-dark {
+			background-color: #d6d8d9 !important;
+			color: #333 !important;
+		}
+
+		.row {
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		.custom-grid img {
+			width: 100%;
+			border-radius: 8px;
+			margin-bottom: 10px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container-fluid my-5">
+		<h1 class="text-center">Personal Portfolio</h1>
+
+		<!-- First Container: Profile with Image and Text -->
+		<div class="container-fluid mt-4 custom-box">
+			<h2 class="text-center mb-3">About Me</h2>
+			<div class="row align-items-center">
+				<div class="col-md-4 text-center">
+					<img src="./assets/profile.jpg" alt="Profile" class="img-fluid rounded-circle" width="150">
+				</div>
+				<div class="col-md-8">
+					<p>I'm an undergraduate software engineering student. I'm a student involved in committee work on
+						campus, and have
+						organizational experience since high school. In carrying out the responsibilities of each role,
+						always ensure that the assigned work is completed properly and
+						on time, proven through good time management skills and teamwork. Focus progressively by
+						possessing willingness
+						to try and eagerness to improve which also in line with hard-work and is always an open-book for
+						new learning
+						experiences and challenges given.</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Second Container: Portfolio with 3 Images -->
+		<div class="container-fluid mt-4 custom-box">
+			<h2 class="text-center mb-3">Project Portfolio</h2>
+			<div class="row row-cols-1 row-cols-md-3 g-4">
+				<div class="col">
+					<div class="custom-grid bg-primary">
+						<img src="./assets/project1.jpg" class="img-fluid" alt="Project 1">
+						<p>Integrating DevOps Workflows with Git, GitHub, Docker, and Jenkins</p>
+					</div>
+				</div>
+				<div class="col">
+					<div class="custom-grid bg-secondary">
+						<img src="./assets/project2.png" class="img-fluid" alt="Project 2">
+						<p>Project Cinema with Real Time</p>
+					</div>
+				</div>
+				<div class="col">
+					<div class="custom-grid bg-success">
+						<img src="./assets/project3.png" class="img-fluid" alt="Project 3">
+						<p>Project Web Studio Lechylicious</p>
+					</div>
+				</div>
+				<div class="col">
+					<div class="custom-grid bg-secondary">
+						<img src="./assets/project4.jpg" class="img-fluid" alt="Project 4">
+						<p>Implementation of Database Usage in Concert Ticket Sales</p>
+					</div>
+				</div>
+				<div class="col">
+					<div class="custom-grid bg-primary">
+						<img src="./assets/project5.jpg" class="img-fluid" alt="Project 5">
+						<p>Self-Ordering Kiosk System at Goldchick Restaurant Using Java</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid mt-4 custom-box">
+			<h2 class="text-center mb-3">Clients Testimony</h2>
+			<div class="row equal-height">
+				<div class="col-md-4 d-flex">
+					<div class="custom-item bg-info">"Sangat profesional dan hasilnya memuaskan!"</div>
+				</div>
+				<div class="col-md-4 d-flex">
+					<div class="custom-item bg-light">"Desain UI/UX yang sangat modern dan responsif."</div>
+				</div>
+				<div class="col-md-4 d-flex">
+					<div class="custom-item bg-dark text-white">"Pengerjaan proyek selesai tepat waktu dan sesuai kebutuhan."
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
